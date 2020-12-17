@@ -1,297 +1,297 @@
 ,p_year,t_manu,case_id
+127,2009.0,AAER,2
+152,2010.0,AAER,1
+29,1997.0,AOC,1
+39,1999.0,AOC,5
+46,2000.0,AOC,2
+78,2004.0,AOC,4
+110,2008.0,AWE,2
+111,2008.0,Acciona,273
+128,2009.0,Acciona,136
+153,2010.0,Acciona,66
+200,2012.0,Acciona,128
+248,2015.0,Acciona,155
+175,2011.0,Aeronautica,1
+201,2012.0,Aeronautica,3
+269,2017.0,Aeronautica,1
+176,2011.0,Alstom,24
+83,2005.0,Bergey Energy,1
+4,1984.0,Bonus,20
+7,1985.0,Bonus,132
+13,1986.0,Bonus,55
+50,2001.0,Bonus,48
+61,2002.0,Bonus,37
+70,2003.0,Bonus,12
+91,2006.0,Bonus,1
+202,2012.0,Bora,2
+129,2009.0,Changzhou Railcar Propulsion Engineering Research and Development Center,1
+203,2012.0,China Creative Wind Energy,17
+101,2007.0,Clipper,19
+112,2008.0,Clipper,189
+130,2009.0,Clipper,246
+154,2010.0,Clipper,28
+177,2011.0,Clipper,99
+204,2012.0,Clipper,100
+20,1990.0,DWT,1
+18,1988.0,Danwin,115
+113,2008.0,DeWind,1
+131,2009.0,DeWind,3
+155,2010.0,DeWind,10
+205,2012.0,DeWind,70
+132,2009.0,EWT,3
+156,2010.0,EWT,2
+206,2012.0,EWT,3
+233,2013.0,EWT,3
+278,2018.0,EWT,1
+285,2019.0,EWT,1
+133,2009.0,Elecon,1
+178,2011.0,Elecon,1
+157,2010.0,Endurance,4
+35,1998.0,Enron,139
+40,1999.0,Enron,256
+51,2001.0,Enron,1
+114,2008.0,Entegrity,16
+158,2010.0,Entegrity,1
+62,2002.0,Fuhrlander,1
+84,2005.0,Fuhrlander,1
+115,2008.0,Fuhrlander,12
+134,2009.0,Fuhrlander,5
+52,2001.0,GE Wind,261
+63,2002.0,GE Wind,42
+71,2003.0,GE Wind,608
+79,2004.0,GE Wind,116
+85,2005.0,GE Wind,958
+92,2006.0,GE Wind,768
+102,2007.0,GE Wind,1558
+116,2008.0,GE Wind,2392
+135,2009.0,GE Wind,2663
+159,2010.0,GE Wind,1682
+179,2011.0,GE Wind,1249
+207,2012.0,GE Wind,2997
+234,2013.0,GE Wind,533
+241,2014.0,GE Wind,1662
+249,2015.0,GE Wind,1927
+260,2016.0,GE Wind,1684
+270,2017.0,GE Wind,887
+279,2018.0,GE Wind,1200
+286,2019.0,GE Wind,1671
+292,2020.0,GE Wind,1000
+53,2001.0,Gamesa,362
+72,2003.0,Gamesa,2
+86,2005.0,Gamesa,25
+93,2006.0,Gamesa,25
+103,2007.0,Gamesa,249
+117,2008.0,Gamesa,305
+136,2009.0,Gamesa,298
+160,2010.0,Gamesa,282
+180,2011.0,Gamesa,77
+208,2012.0,Gamesa,673
+242,2014.0,Gamesa,11
+250,2015.0,Gamesa,196
+261,2016.0,Gamesa,152
+271,2017.0,Gamesa,419
+137,2009.0,Goldwind,3
+181,2011.0,Goldwind,3
+209,2012.0,Goldwind,101
+251,2015.0,Goldwind,5
+262,2016.0,Goldwind,1
+272,2017.0,Goldwind,4
+280,2018.0,Goldwind,70
+287,2019.0,Goldwind,8
+210,2012.0,Guodian,6
+211,2012.0,HZ Windpower,2
+273,2017.0,HZ Windpower,14
+182,2011.0,Hyundai,2
+212,2012.0,Hyundai,2
+183,2011.0,Kenersys,1
+213,2012.0,Kenersys,1
+161,2010.0,Leitner Ag,1
+214,2012.0,Leitner Poma,1
 0,1982.0,Lolland,2
 1,1982.0,Micon,1
+5,1984.0,Micon,1
+8,1985.0,Micon,108
+14,1986.0,Micon,94
+16,1987.0,Micon,185
+54,2001.0,Micon,2
+64,2002.0,Micon,1
+41,1999.0,Mitsubishi,23
+47,2000.0,Mitsubishi,29
+55,2001.0,Mitsubishi,278
+65,2002.0,Mitsubishi,42
+73,2003.0,Mitsubishi,201
+80,2004.0,Mitsubishi,120
+87,2005.0,Mitsubishi,190
+94,2006.0,Mitsubishi,127
+104,2007.0,Mitsubishi,364
+118,2008.0,Mitsubishi,514
+138,2009.0,Mitsubishi,417
+162,2010.0,Mitsubishi,146
+184,2011.0,Mitsubishi,136
+215,2012.0,Mitsubishi,204
+30,1997.0,NEG Micon,8
+36,1998.0,NEG Micon,2
+42,1999.0,NEG Micon,320
+48,2000.0,NEG Micon,1
+56,2001.0,NEG Micon,134
+66,2002.0,NEG Micon,64
+74,2003.0,NEG Micon,84
+81,2004.0,NEG Micon,22
+88,2005.0,NEG Micon,38
+119,2008.0,NEG Micon,1
+139,2009.0,NEG Micon,1
+216,2012.0,NEG Micon,1
+252,2015.0,NEG Micon,1
+140,2009.0,NedWind,13
+43,1999.0,Nordex,1
+57,2001.0,Nordex,2
+67,2002.0,Nordex,2
+105,2007.0,Nordex,1
+141,2009.0,Nordex,25
+163,2010.0,Nordex,8
+185,2011.0,Nordex,114
+217,2012.0,Nordex,112
+243,2014.0,Nordex,37
+253,2015.0,Nordex,55
+263,2016.0,Nordex,31
+274,2017.0,Nordex,262
+281,2018.0,Nordex,280
+288,2019.0,Nordex,168
+293,2020.0,Nordex,47
+164,2010.0,Nordic,2
+186,2011.0,Nordic,1
+218,2012.0,Nordic,2
+6,1984.0,Nordtank,134
+9,1985.0,Nordtank,73
+89,2005.0,Nordtank,18
+165,2010.0,Nordtank,1
+187,2011.0,Nordtank,6
+58,2001.0,Northern Power Systems,1
+68,2002.0,Northern Power Systems,1
+95,2006.0,Northern Power Systems,3
+120,2008.0,Northern Power Systems,6
+142,2009.0,Northern Power Systems,27
+166,2010.0,Northern Power Systems,42
+188,2011.0,Northern Power Systems,7
+219,2012.0,Northern Power Systems,6
+235,2013.0,Northern Power Systems,1
+264,2016.0,Northern Power Systems,1
+143,2009.0,Norwin,1
+167,2010.0,PowerWind,1
+189,2011.0,PowerWind,1
+220,2012.0,PowerWind,4
+236,2013.0,PowerWind,1
+244,2014.0,PowerWind,1
+121,2008.0,REpower,47
+144,2009.0,REpower,165
+168,2010.0,REpower,35
+190,2011.0,REpower,86
+221,2012.0,REpower,288
+122,2008.0,RRB,1
+145,2009.0,RRB,6
+245,2014.0,RRB,1
+254,2015.0,Renewtech LLC,1
+222,2012.0,SIVA Windturbine India Pvt Ltd,1
+169,2010.0,Samsung,3
+191,2011.0,Sany,5
+223,2012.0,Sany,1
+237,2013.0,Sany,4
+255,2015.0,Sany,11
+31,1997.0,Seaforth,6
+75,2003.0,Seaforth,2
+96,2006.0,Seaforth,3
+97,2006.0,Siemens,119
+106,2007.0,Siemens,308
+123,2008.0,Siemens,344
+146,2009.0,Siemens,502
+170,2010.0,Siemens,360
+192,2011.0,Siemens,533
+224,2012.0,Siemens,1116
+238,2013.0,Siemens,37
+246,2014.0,Siemens,510
+256,2015.0,Siemens,525
+265,2016.0,Siemens,349
+275,2017.0,Siemens,323
+289,2019.0,Siemens,118
+59,2001.0,Siemens Gamesa Renewable Energy,166
+98,2006.0,Siemens Gamesa Renewable Energy,130
+107,2007.0,Siemens Gamesa Renewable Energy,67
+147,2009.0,Siemens Gamesa Renewable Energy,5
+193,2011.0,Siemens Gamesa Renewable Energy,1
+225,2012.0,Siemens Gamesa Renewable Energy,1
+257,2015.0,Siemens Gamesa Renewable Energy,1
+282,2018.0,Siemens Gamesa Renewable Energy,253
+290,2019.0,Siemens Gamesa Renewable Energy,397
+294,2020.0,Siemens Gamesa Renewable Energy,125
+32,1997.0,Silver Eagle,2
+194,2011.0,Sinovel,1
+226,2012.0,Sinovel,3
+195,2011.0,Siva,1
+171,2010.0,Skystream,1
+76,2003.0,Suzlon,18
+99,2006.0,Suzlon,45
+108,2007.0,Suzlon,98
+124,2008.0,Suzlon,361
+148,2009.0,Suzlon,345
+172,2010.0,Suzlon,201
+196,2011.0,Suzlon,159
+227,2012.0,Suzlon,89
+173,2010.0,Turbowinds,6
+228,2012.0,Turbowinds,1
+197,2011.0,Unison,2
+10,1985.0,Vanguard,3
+125,2008.0,Vensys,1
+149,2009.0,Vensys,2
+198,2011.0,Vensys,4
+229,2012.0,Vensys,2
+266,2016.0,Vensys,10
+276,2017.0,Vensys,3
+283,2018.0,Vensys,7
+230,2012.0,Vergnet,1
+239,2013.0,Vergnet,3
+258,2015.0,Vergnet,4
+267,2016.0,Vergnet,1
 2,1982.0,Vestas,1
 3,1983.0,Vestas,432
-4,1984.0,Bonus,20
-5,1984.0,Micon,1
-6,1984.0,Nordtank,134
-7,1985.0,Bonus,132
-8,1985.0,Micon,108
-9,1985.0,Nordtank,73
-10,1985.0,Vanguard,3
 11,1985.0,Vestas,83
-12,1985.0,Windmatic,49
-13,1986.0,Bonus,55
-14,1986.0,Micon,94
 15,1986.0,Vestas,2
-16,1987.0,Micon,185
 17,1987.0,Vestas,14
-18,1988.0,Danwin,115
-19,1988.0,Wincon,1
-20,1990.0,DWT,1
 21,1990.0,Vestas,326
 22,1991.0,Vestas,1
 23,1992.0,Vestas,1
-24,1992.0,Wind World,1
 25,1994.0,Vestas,30
 26,1995.0,Vestas,42
-27,1995.0,Windmatic,1
 28,1996.0,Vestas,1
-29,1997.0,AOC,1
-30,1997.0,NEG Micon,8
-31,1997.0,Seaforth,6
-32,1997.0,Silver Eagle,2
 33,1997.0,Vestas,12
-34,1997.0,Zond,12
-35,1998.0,Enron,139
-36,1998.0,NEG Micon,2
 37,1998.0,Vestas,42
-38,1998.0,Zond,3
-39,1999.0,AOC,5
-40,1999.0,Enron,256
-41,1999.0,Mitsubishi,23
-42,1999.0,NEG Micon,320
-43,1999.0,Nordex,1
 44,1999.0,Vestas,93
-45,1999.0,Zond,209
-46,2000.0,AOC,2
-47,2000.0,Mitsubishi,29
-48,2000.0,NEG Micon,1
 49,2000.0,Vestas,40
-50,2001.0,Bonus,48
-51,2001.0,Enron,1
-52,2001.0,GE Wind,261
-53,2001.0,Gamesa,362
-54,2001.0,Micon,2
-55,2001.0,Mitsubishi,278
-56,2001.0,NEG Micon,134
-57,2001.0,Nordex,2
-58,2001.0,Northern Power Systems,1
-59,2001.0,Siemens Gamesa Renewable Energy,166
 60,2001.0,Vestas,620
-61,2002.0,Bonus,37
-62,2002.0,Fuhrlander,1
-63,2002.0,GE Wind,42
-64,2002.0,Micon,1
-65,2002.0,Mitsubishi,42
-66,2002.0,NEG Micon,64
-67,2002.0,Nordex,2
-68,2002.0,Northern Power Systems,1
 69,2002.0,Vestas,270
-70,2003.0,Bonus,12
-71,2003.0,GE Wind,608
-72,2003.0,Gamesa,2
-73,2003.0,Mitsubishi,201
-74,2003.0,NEG Micon,84
-75,2003.0,Seaforth,2
-76,2003.0,Suzlon,18
 77,2003.0,Vestas,224
-78,2004.0,AOC,4
-79,2004.0,GE Wind,116
-80,2004.0,Mitsubishi,120
-81,2004.0,NEG Micon,22
 82,2004.0,Vestas,65
-83,2005.0,Bergey Energy,1
-84,2005.0,Fuhrlander,1
-85,2005.0,GE Wind,958
-86,2005.0,Gamesa,25
-87,2005.0,Mitsubishi,190
-88,2005.0,NEG Micon,38
-89,2005.0,Nordtank,18
 90,2005.0,Vestas,367
-91,2006.0,Bonus,1
-92,2006.0,GE Wind,768
-93,2006.0,Gamesa,25
-94,2006.0,Mitsubishi,127
-95,2006.0,Northern Power Systems,3
-96,2006.0,Seaforth,3
-97,2006.0,Siemens,119
-98,2006.0,Siemens Gamesa Renewable Energy,130
-99,2006.0,Suzlon,45
 100,2006.0,Vestas,285
-101,2007.0,Clipper,19
-102,2007.0,GE Wind,1558
-103,2007.0,Gamesa,249
-104,2007.0,Mitsubishi,364
-105,2007.0,Nordex,1
-106,2007.0,Siemens,308
-107,2007.0,Siemens Gamesa Renewable Energy,67
-108,2007.0,Suzlon,98
 109,2007.0,Vestas,536
-110,2008.0,AWE,2
-111,2008.0,Acciona,273
-112,2008.0,Clipper,189
-113,2008.0,DeWind,1
-114,2008.0,Entegrity,16
-115,2008.0,Fuhrlander,12
-116,2008.0,GE Wind,2392
-117,2008.0,Gamesa,305
-118,2008.0,Mitsubishi,514
-119,2008.0,NEG Micon,1
-120,2008.0,Northern Power Systems,6
-121,2008.0,REpower,47
-122,2008.0,RRB,1
-123,2008.0,Siemens,344
-124,2008.0,Suzlon,361
-125,2008.0,Vensys,1
 126,2008.0,Vestas,582
-127,2009.0,AAER,2
-128,2009.0,Acciona,136
-129,2009.0,Changzhou Railcar Propulsion Engineering Research and Development Center,1
-130,2009.0,Clipper,246
-131,2009.0,DeWind,3
-132,2009.0,EWT,3
-133,2009.0,Elecon,1
-134,2009.0,Fuhrlander,5
-135,2009.0,GE Wind,2663
-136,2009.0,Gamesa,298
-137,2009.0,Goldwind,3
-138,2009.0,Mitsubishi,417
-139,2009.0,NEG Micon,1
-140,2009.0,NedWind,13
-141,2009.0,Nordex,25
-142,2009.0,Northern Power Systems,27
-143,2009.0,Norwin,1
-144,2009.0,REpower,165
-145,2009.0,RRB,6
-146,2009.0,Siemens,502
-147,2009.0,Siemens Gamesa Renewable Energy,5
-148,2009.0,Suzlon,345
-149,2009.0,Vensys,2
 150,2009.0,Vestas,825
-151,2009.0,Wind Energy Solutions,1
-152,2010.0,AAER,1
-153,2010.0,Acciona,66
-154,2010.0,Clipper,28
-155,2010.0,DeWind,10
-156,2010.0,EWT,2
-157,2010.0,Endurance,4
-158,2010.0,Entegrity,1
-159,2010.0,GE Wind,1682
-160,2010.0,Gamesa,282
-161,2010.0,Leitner Ag,1
-162,2010.0,Mitsubishi,146
-163,2010.0,Nordex,8
-164,2010.0,Nordic,2
-165,2010.0,Nordtank,1
-166,2010.0,Northern Power Systems,42
-167,2010.0,PowerWind,1
-168,2010.0,REpower,35
-169,2010.0,Samsung,3
-170,2010.0,Siemens,360
-171,2010.0,Skystream,1
-172,2010.0,Suzlon,201
-173,2010.0,Turbowinds,6
 174,2010.0,Vestas,66
-175,2011.0,Aeronautica,1
-176,2011.0,Alstom,24
-177,2011.0,Clipper,99
-178,2011.0,Elecon,1
-179,2011.0,GE Wind,1249
-180,2011.0,Gamesa,77
-181,2011.0,Goldwind,3
-182,2011.0,Hyundai,2
-183,2011.0,Kenersys,1
-184,2011.0,Mitsubishi,136
-185,2011.0,Nordex,114
-186,2011.0,Nordic,1
-187,2011.0,Nordtank,6
-188,2011.0,Northern Power Systems,7
-189,2011.0,PowerWind,1
-190,2011.0,REpower,86
-191,2011.0,Sany,5
-192,2011.0,Siemens,533
-193,2011.0,Siemens Gamesa Renewable Energy,1
-194,2011.0,Sinovel,1
-195,2011.0,Siva,1
-196,2011.0,Suzlon,159
-197,2011.0,Unison,2
-198,2011.0,Vensys,4
 199,2011.0,Vestas,970
-200,2012.0,Acciona,128
-201,2012.0,Aeronautica,3
-202,2012.0,Bora,2
-203,2012.0,China Creative Wind Energy,17
-204,2012.0,Clipper,100
-205,2012.0,DeWind,70
-206,2012.0,EWT,3
-207,2012.0,GE Wind,2997
-208,2012.0,Gamesa,673
-209,2012.0,Goldwind,101
-210,2012.0,Guodian,6
-211,2012.0,HZ Windpower,2
-212,2012.0,Hyundai,2
-213,2012.0,Kenersys,1
-214,2012.0,Leitner Poma,1
-215,2012.0,Mitsubishi,204
-216,2012.0,NEG Micon,1
-217,2012.0,Nordex,112
-218,2012.0,Nordic,2
-219,2012.0,Northern Power Systems,6
-220,2012.0,PowerWind,4
-221,2012.0,REpower,288
-222,2012.0,SIVA Windturbine India Pvt Ltd,1
-223,2012.0,Sany,1
-224,2012.0,Siemens,1116
-225,2012.0,Siemens Gamesa Renewable Energy,1
-226,2012.0,Sinovel,3
-227,2012.0,Suzlon,89
-228,2012.0,Turbowinds,1
-229,2012.0,Vensys,2
-230,2012.0,Vergnet,1
 231,2012.0,Vestas,805
-232,2012.0,Windmatic,5
-233,2013.0,EWT,3
-234,2013.0,GE Wind,533
-235,2013.0,Northern Power Systems,1
-236,2013.0,PowerWind,1
-237,2013.0,Sany,4
-238,2013.0,Siemens,37
-239,2013.0,Vergnet,3
 240,2013.0,Vestas,3
-241,2014.0,GE Wind,1662
-242,2014.0,Gamesa,11
-243,2014.0,Nordex,37
-244,2014.0,PowerWind,1
-245,2014.0,RRB,1
-246,2014.0,Siemens,510
 247,2014.0,Vestas,276
-248,2015.0,Acciona,155
-249,2015.0,GE Wind,1927
-250,2015.0,Gamesa,196
-251,2015.0,Goldwind,5
-252,2015.0,NEG Micon,1
-253,2015.0,Nordex,55
-254,2015.0,Renewtech LLC,1
-255,2015.0,Sany,11
-256,2015.0,Siemens,525
-257,2015.0,Siemens Gamesa Renewable Energy,1
-258,2015.0,Vergnet,4
 259,2015.0,Vestas,1400
-260,2016.0,GE Wind,1684
-261,2016.0,Gamesa,152
-262,2016.0,Goldwind,1
-263,2016.0,Nordex,31
-264,2016.0,Northern Power Systems,1
-265,2016.0,Siemens,349
-266,2016.0,Vensys,10
-267,2016.0,Vergnet,1
 268,2016.0,Vestas,1533
-269,2017.0,Aeronautica,1
-270,2017.0,GE Wind,887
-271,2017.0,Gamesa,419
-272,2017.0,Goldwind,4
-273,2017.0,HZ Windpower,14
-274,2017.0,Nordex,262
-275,2017.0,Siemens,323
-276,2017.0,Vensys,3
 277,2017.0,Vestas,1106
-278,2018.0,EWT,1
-279,2018.0,GE Wind,1200
-280,2018.0,Goldwind,70
-281,2018.0,Nordex,280
-282,2018.0,Siemens Gamesa Renewable Energy,253
-283,2018.0,Vensys,7
 284,2018.0,Vestas,1228
-285,2019.0,EWT,1
-286,2019.0,GE Wind,1671
-287,2019.0,Goldwind,8
-288,2019.0,Nordex,168
-289,2019.0,Siemens,118
-290,2019.0,Siemens Gamesa Renewable Energy,397
 291,2019.0,Vestas,1205
-292,2020.0,GE Wind,1000
-293,2020.0,Nordex,47
-294,2020.0,Siemens Gamesa Renewable Energy,125
 295,2020.0,Vestas,418
+19,1988.0,Wincon,1
+151,2009.0,Wind Energy Solutions,1
+24,1992.0,Wind World,1
+12,1985.0,Windmatic,49
+27,1995.0,Windmatic,1
+232,2012.0,Windmatic,5
+34,1997.0,Zond,12
+38,1998.0,Zond,3
+45,1999.0,Zond,209
