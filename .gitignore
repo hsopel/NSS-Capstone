@@ -9,6 +9,9 @@ __pycache__/
 # Data
 data/
 
+#Large notebook
+*turbine_map.ipynb
+
 # Distribution / packaging
 .Python
 build/
