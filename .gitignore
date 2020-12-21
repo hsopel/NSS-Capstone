@@ -8,7 +8,7 @@ __pycache__/
 
 # Data
 data/
-
+*wind-energy-299318-3149f6f4b059
 #Large notebook
 *turbine_map.ipynb
 

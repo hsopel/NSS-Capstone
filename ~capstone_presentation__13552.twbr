@@ -1355,7 +1355,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-hidden-fields='true' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[io:Job Set:nk]' type='palette'>
@@ -2078,16 +2078,35 @@
             <datasource caption='us' name='federated.1l6ncpv10u4ps61961y2h1h8o5sv' />
           </datasources>
           <datasource-dependencies datasource='federated.1l6ncpv10u4ps61961y2h1h8o5sv'>
-            <column datatype='real' name='[F3]' role='measure' type='quantitative' />
             <column datatype='real' name='[Net generation (billion kilowatt hours)]' role='measure' type='quantitative' />
             <column caption='Year1' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Net generation (billion kilowatt hours)]' derivation='Sum' name='[sum:Net generation (billion kilowatt hours):qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:ok]'>
-            <groupfilter from='1980' function='range' level='[none:Year:ok]' to='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2000' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2001' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2002' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2003' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2004' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2005' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2006' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2007' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2008' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2009' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2010' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2011' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2012' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2013' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2014' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2015' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2016' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2017' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2018' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2019' />
+            </groupfilter>
           </filter>
           <slices>
             <column>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:ok]</column>
@@ -2101,30 +2120,11 @@
             <format attr='subtitle' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]' scope='rows' value='' />
             <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]' scope='cols' value='Year' />
             <format attr='tick-color' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]' value='#f5f5f5' />
-            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:F3:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
             <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]' field-type='quantitative' max='315.94518221830987' min='0.0' range-type='fixed' scope='rows' type='space' />
           </style-rule>
         </style>
         <panes>
-          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
-            </encodings>
-          </pane>
-          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
-            </encodings>
-          </pane>
-          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:F3:qk]'>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
@@ -2134,7 +2134,7 @@
             </encodings>
           </pane>
         </panes>
-        <rows>([federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk] + [federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:F3:qk])</rows>
+        <rows>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]</rows>
         <cols>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]</cols>
       </table>
       <simple-id uuid='{53A81DCB-9703-4671-9EC1-5E60BD63C654}' />
@@ -3025,7 +3025,7 @@
           <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='50'>
+          <strip size='93'>
             <card type='rows' />
           </strip>
           <strip size='28'>
