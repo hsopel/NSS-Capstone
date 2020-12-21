@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "wind-energy-299318",
+  "private_key_id": "3149f6f4b0596ebd5df1e338c7db766881e24036",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCMk/fp9o+D8M/N\nd6+TMQdTqzboXUNOxDet7DiBWY8PIUenCICjCJMm6Qkh4nTFa5VAqQ2XBYwDK4zh\nAOIxQl4t4NTHj7qyXpeALVTrcx2CCgoRm22dAI3V7dBKnPDWBV/tHWx0ZYCn+sTo\n4ehkPx9acOvGlf7DpN+/bvUIrdssYyPtT9pKgKib8hqfq7WHZBwd+54DmSNjOzYd\no2MmNdwg7n99+IamT7+TTDES06oihWsfeMPoCO21P6PS6mAGNx89d5goViNkbyBV\nGN2LvCNHmB1a/LyTT/Kyqcao0+8Q8qNvs+vBDeRLY6ljaADYN458cLtxdzjkA+VS\nchquwr8BAgMBAAECggEACqe0/uRnspcUMxVHJyuMS/7SV7io7z2PYFUDH+fBQILz\n3sDV2jWeTLDVVr6Gvgd2Xbsqiue6WeupPw0td9EZWRYdXp5h5t7lUgttkDaOliKL\napP6sg+ekIhY1Szx0rD/2TW1mJlwb9sBpYqo7f88UcM1Fb1c/OiAZo7DDxQ5ZHLm\n/XEQnwi0xRKZO2Lh0sljncWqFbnQw4sk09Kj/3h2yNc57hjh+lyddEI4eO4Xol40\nCXW9UYZBYquybbTH2Mk4fXY0WVvQpJGf0ssxUE/5I9/NfqPWL8UeU4s5eOCQgng6\n/xaeNNBmHK2+6NPlWPIjGZMP7k+h95rTJ3/SCg8z6QKBgQDAs7/nMmJHSkWCA8K4\nnachLXX66dAEGui7JJTgBJnVwOpfGXvc2Pvpqn7/VjuVMvjghzvumERTPjrFIBqq\n7Oor5R8AR4IDeaCOcSdA/k+dOObt6x+VdkPPi7fUBbLx0HzpI1JTHXrllKkxglCO\nKkoYriTbf4s71bVyFk0CHthUCQKBgQC6wR6D13S7m+6PS2yEXGovjmOQ7U1VJSqU\nH9HvI58QtjJ04ej+vzvkwiJGc/TwvXA21v6bsX1l1LOHFdpxjPhkHcwaLZIPwPIY\nyM18SlxF2d7SLBH17Ew2FVYe4DklcsXN0G47tAc2jKFuE7+3vwTjMzPW2vp88ZyI\nl8i9ryQBOQKBgQCfXsmycuf238UWnveW6cPEW628Y00HaB3cUIfTsdpsfw0Ws6PN\n5aKKANjhYbcLUMmmIBH/5Ox1D/1Y9JE5lZCh1u9Jstoi959CzvBQ/0Jm3B2Y3SEU\n4md4qavR7RiuhugXhH/cf4AZiVZYvNbUjMMVIEkZQ6WqSbezcCAmRc5RyQKBgDFv\nVWiI6/mNeUStLniLDgCwrGJ8rm/Pesni8mte/ogp8olGE6r7bBtN2EzV/QyM2Ntr\nZdJI1WzTNQKZIk3UhxvZV2HGllddN7ifzuULugkzduwjhk2W00WtuDJMIFRtYTbt\n6YAcU5x49XJx/9nf0qdhsmM5a/0O5+SwaQ7tAZbhAoGBAI4ug+sHIs/ENQMVmezN\nA15Md9l+hje+/wk+/yRXZXhYVAwG4nNgc0p5W5vXF9XqXAegH57ytMwd5w882iYm\nOp7Wjm7F+XVeRvJAn2U3uc7jGEiS0O8zcbglgIGO3CVf2BV2DyrEvMGyufGjqZus\ngefeePdgDd5ImXOyFcvHEum2\n-----END PRIVATE KEY-----\n",
+  "client_email": "capstone@wind-energy-299318.iam.gserviceaccount.com",
+  "client_id": "113340615778922112616",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/capstone%40wind-energy-299318.iam.gserviceaccount.com"
+}
