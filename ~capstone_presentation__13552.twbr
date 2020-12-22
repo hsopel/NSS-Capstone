@@ -1394,6 +1394,9 @@
             <map to='#59a14f'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:75\%:qk]&quot;</bucket>
             </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]&quot;</bucket>
+            </map>
             <map to='#76b7b2'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv]&quot;</bucket>
             </map>
@@ -1456,9 +1459,6 @@
             </map>
             <map to='#fabfd2'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:std:qk]&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]&quot;</bucket>
             </map>
             <map to='#ffbe7d'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:50\%:qk]&quot;</bucket>
@@ -2121,6 +2121,7 @@
             <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]' scope='cols' value='Year' />
             <format attr='tick-color' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]' value='#f5f5f5' />
             <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]' field-type='quantitative' max='315.94518221830987' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]' field-type='quantitative' max='2020' min='2000' range-type='fixed' scope='cols' type='space' />
           </style-rule>
         </style>
         <panes>
@@ -2129,9 +2130,24 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
             <encodings>
               <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Net Generation (billion kilowatt hours):	</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2413811683654785' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Net generation (billion kilowatt hours):qk]</rows>
@@ -2178,6 +2194,8 @@
           <style-rule element='header'>
             <format attr='width' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Job:nk]' value='332' />
             <format attr='color' data-class='subtotal' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Job:nk]' value='#000000' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[io:Job Set:nk]' value='normal' />
+            <format attr='font-weight' data-class='total' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[io:Job Set:nk]' value='normal' />
           </style-rule>
           <style-rule element='label'>
             <format attr='color' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[io:Job Set:nk]' value='#000000' />
@@ -2199,6 +2217,15 @@
             <encodings>
               <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[io:Job Set:nk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Job:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:Job:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percent:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Percent:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='size' value='1.2413811683654785' />
@@ -2366,6 +2393,54 @@
     </worksheet>
   </worksheets>
   <dashboards>
+    <dashboard name='Dashboard 10'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='98000' id='3' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>According to the </run>
+              <run fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' underline='true'>U.S. Energy Information Administration</run>
+              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>, the average U.S. home uses 867 kilowatt-hours (kWh) per month. The mean turbine capacity in the </run>
+              <run fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' underline='true'>U.S. Wind Turbine Database</run>
+              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'> (USWTDB) is 1.67 megawatts (MW). At a 33% capacity factor, that average turbine would generate over 402,000 kWh per month - enough for over 460 average U.S. homes. To put it another way, the average wind turbine generates enough energy in 94 minutes to power an average U.S. home for one month. </run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='17' underline='true'>How much wind energy does it take to power an average home? (usgs.gov)</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{08A06D81-556B-4617-8F48-5FD03785F4A1}' />
+    </dashboard>
     <dashboard name='Dashboard 9'>
       <style />
       <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
@@ -2394,8 +2469,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='8' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='7' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='10' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='9' param='vert' w='98400' x='800' y='1000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='98000' id='3' w='98400' x='800' y='1000'>
                   <formatted-text>
                     <run auto-url='true' fontcolor='#0000ff' fontname='Benton Sans Book' hyperlink='tabdoc:load-url url=&amp;quot;Fastest Growing Occupations : Occupational Outlook Handbook: : U.S. Bureau of Labor Statistics (bls.gov)&amp;quot;' underline='true'>Fastest Growing Occupations : Occupational Outlook Handbook: : U.S. Bureau of Labor Statistics (bls.gov)</run>
@@ -2433,18 +2508,10 @@
       <size maxheight='885' maxwidth='1000' minheight='885' minwidth='1000' preset-index='17' sizing-mode='fixed' />
       <zones>
         <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
-          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='23' param='horz' w='98200' x='900' y='1017'>
-            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='7' param='vert' w='98200' x='900' y='1017'>
-              <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5876' id='8' w='98200' x='900' y='1017'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='92090' id='5' w='98200' x='900' y='6893'>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='37112' id='3' is-scaled='1' param='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/images/slide2_cropped.jpg' w='98200' x='900' y='6893'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='56' param='horz' w='98200' x='900' y='1017'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='23' param='horz' w='98200' x='900' y='1017'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='7' param='vert' w='98200' x='900' y='1017'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5876' id='8' w='98200' x='900' y='1017'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2452,17 +2519,22 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='54978' id='24' param='vert' w='98200' x='900' y='44005'>
-                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='54978' id='26' param='horz' w='98200' x='900' y='44005'>
-                    <zone h='54978' id='33' name='Installed Capicity by Year' w='98200' x='900' y='44005'>
-                      <layout-cache minheight='225' minwidth='189' type-h='scalable' type-w='scalable' />
-                      <zone-style>
-                        <format attr='border-color' value='#000000' />
-                        <format attr='border-style' value='none' />
-                        <format attr='border-width' value='0' />
-                        <format attr='margin' value='4' />
-                      </zone-style>
-                    </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='92090' id='5' w='98200' x='900' y='6893'>
+                  <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='37112' id='3' is-scaled='1' param='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/images/slide2_cropped.jpg' w='98200' x='900' y='6893'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='54978' id='54' name='Net Generation' w='98200' x='900' y='44005'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
                   </zone>
                 </zone>
               </zone>
@@ -2487,8 +2559,8 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='51' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='50' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='53' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97966' id='52' param='vert' w='98200' x='900' y='1017'>
                 <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5876' id='8' w='98200' x='900' y='1017'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2499,16 +2571,6 @@
                   </zone-style>
                 </zone>
                 <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='37112' id='3' is-fixed='true' is-scaled='1' param='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/images/slide2_cropped.jpg' w='98200' x='900' y='6893'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='54978' id='33' is-fixed='true' name='Installed Capicity by Year' w='98200' x='900' y='44005'>
-                  <layout-cache minheight='225' minwidth='189' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2562,8 +2624,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='22' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='21' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='24' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='23' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Hub Height' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2600,15 +2662,27 @@
       <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
       <zones>
         <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
-          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='98000' id='3' w='98400' x='800' y='1000'>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='98000' id='3' w='87300' x='6100' y='1000'>
             <formatted-text>
-              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>According to the </run>
-              <run auto-url='true' fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;U.S. Energy Information Administration&amp;quot;' underline='true'>U.S. Energy Information Administration</run>
-              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>, the average U.S. home uses 867 kilowatt-hours (kWh) per month. The mean turbine capacity in the </run>
-              <run auto-url='true' fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;U.S. Wind Turbine Database&amp;quot;' underline='true'>U.S. Wind Turbine Database</run>
-              <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'> (USWTDB) is 1.67 megawatts (MW). At a 33% capacity factor, that average turbine would generate over 402,000 kWh per month - enough for over 460 average U.S. homes. To put it another way, the average wind turbine generates enough energy in 94 minutes to power an average U.S. home for one month. </run>
-              <run>Æ&#10;&#10;</run>
-              <run auto-url='true' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;How much wind energy does it take to power an average home? (usgs.gov)&amp;quot;' underline='true'>How much wind energy does it take to power an average home? (usgs.gov)</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>100 watt light bulb = 0.1 kilowatts/hour = </run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1 kWh after 10 hours</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average U.S. home: </run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>867 kilowatt-hours (kWh) per month</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average rated turbine capacity: </run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1.67 megawatts = 1670 kilowatts </run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Capacity Factor = Actual amount produced over time / maximum output 100% of the time</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average wind turbine generates enough energy in </run>
+              <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>94 minutes</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'> to power an average U.S. home for </run>
+              <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>one month</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>. </run>
             </formatted-text>
             <zone-style>
               <format attr='border-color' value='#000000' />
@@ -2617,6 +2691,8 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='23' param='vert' w='5300' x='800' y='1000' />
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='24' param='vert' w='5800' x='93400' y='1000' />
           <zone-style>
             <format attr='border-color' value='#000000' />
             <format attr='border-style' value='none' />
@@ -2629,17 +2705,29 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='19' param='vert' w='84000' x='8000' y='8000'>
-                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='98000' id='3' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='22' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='21' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='98000' id='3' w='98400' x='800' y='1000'>
                   <formatted-text>
-                    <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>According to the </run>
-                    <run auto-url='true' fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;U.S. Energy Information Administration&amp;quot;' underline='true'>U.S. Energy Information Administration</run>
-                    <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'>, the average U.S. home uses 867 kilowatt-hours (kWh) per month. The mean turbine capacity in the </run>
-                    <run auto-url='true' fontcolor='#1d5aab' fontname='Source Sans Pro,sans-serif' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;U.S. Wind Turbine Database&amp;quot;' underline='true'>U.S. Wind Turbine Database</run>
-                    <run fontcolor='#333333' fontname='Source Sans Pro,sans-serif' fontsize='17'> (USWTDB) is 1.67 megawatts (MW). At a 33% capacity factor, that average turbine would generate over 402,000 kWh per month - enough for over 460 average U.S. homes. To put it another way, the average wind turbine generates enough energy in 94 minutes to power an average U.S. home for one month. </run>
-                    <run>Æ&#10;&#10;</run>
-                    <run auto-url='true' fontcolor='#0000ff' fontname='Benton Sans Book' fontsize='17' hyperlink='tabdoc:load-url url=&amp;quot;How much wind energy does it take to power an average home? (usgs.gov)&amp;quot;' underline='true'>How much wind energy does it take to power an average home? (usgs.gov)</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>100 watt light bulb = 0.1 kilowatts/hour = </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1 kWh after 10 hours</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average U.S. home: </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>867 kilowatt-hours (kWh) per month</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average rated turbine capacity: </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1.67 megawatts = 1670 kilowatts </run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Capacity Factor = Actual amount produced over time / maximum output 100% of the time</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average wind turbine generates enough energy in </run>
+                    <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>94 minutes</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'> to power an average U.S. home for </run>
+                    <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>one month</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>. </run>
                   </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2691,8 +2779,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='10' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='13' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='12' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='PG Occu' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2723,7 +2811,7 @@
           <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
             <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='6535' id='4' paired-zone-id='5' removable='false' w='98426' x='787' y='830' />
             <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='91805' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='7365'>
-              <flipboard active-id='3' nav-type='dot' show-nav-arrows='true'>
+              <flipboard active-id='7' nav-type='dot' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='Title Page' id='1' />
                   <story-point captured-sheet='Sunrise' id='2' />
@@ -2777,8 +2865,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='15' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='18' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='17' param='vert' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Rated Cap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2835,8 +2923,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='41' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='44' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='43' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='97992' id='3' is-fixed='true' is-scaled='1' param='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/images/wind_sunrise.JPG' w='98400' x='800' y='1004'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2867,8 +2955,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='40' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='39' param='vert' w='84000' x='8000' y='8000' />
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='41' param='vert' w='84000' x='8000' y='8000' />
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -2932,8 +3020,8 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='27' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='26' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='28' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='6500' id='8' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2966,7 +3054,7 @@
       <simple-id uuid='{F035EF41-DEBB-48F0-B28C-D3DD28C2EB6B}' />
     </dashboard>
   </dashboards>
-  <windows source-height='44'>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
     <window class='dashboard' name='Title Page'>
       <viewpoints />
       <active id='-1' />
@@ -2987,10 +3075,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
           <strip size='30'>
@@ -3012,7 +3100,7 @@
       <active id='-1' />
       <simple-id uuid='{6699A355-CC4A-45DE-9E43-B3C28D2E7536}' />
     </window>
-    <window class='worksheet' maximized='true' name='Net Generation'>
+    <window class='worksheet' name='Net Generation'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3022,7 +3110,7 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
           <strip size='93'>
@@ -3050,10 +3138,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3073,10 +3161,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3100,11 +3188,11 @@
     </window>
     <window class='dashboard' name='Energy Timeline'>
       <viewpoints>
-        <viewpoint name='Installed Capicity by Year'>
+        <viewpoint name='Net Generation'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='54' />
       <simple-id uuid='{B39C2AB7-35E3-4B12-AB5B-DEF3B65D9FD4}' />
     </window>
     <window class='dashboard' name='Megawatt'>
@@ -3117,37 +3205,6 @@
       <active id='-1' />
       <simple-id uuid='{F508B599-0247-407C-9B6B-D45F6E27908E}' />
     </window>
-    <window class='worksheet' name='Rated Cap'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='28'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='1' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <zoom type='entire-view' />
-      </viewpoint>
-      <simple-id uuid='{92E2F32E-434A-4DE4-8BB7-BC66FB9E0457}' />
-    </window>
     <window class='worksheet' name='Hub Height'>
       <cards>
         <edge name='left'>
@@ -3158,10 +3215,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3179,10 +3236,41 @@
       </viewpoint>
       <simple-id uuid='{1D43AF45-8400-4A1F-A492-AD1E5DDE3EA1}' />
     </window>
-    <window class='worksheet' name='Hub Height (2)'>
+    <window class='worksheet' name='Rated Cap'>
       <cards>
         <edge name='left'>
           <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{92E2F32E-434A-4DE4-8BB7-BC66FB9E0457}' />
+    </window>
+    <window class='worksheet' name='Hub Height (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='133'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3195,7 +3283,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='23'>
             <card type='title' />
           </strip>
         </edge>
@@ -3208,13 +3296,13 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='9' />
       <simple-id uuid='{AA6094A9-2506-41F9-A293-21FB841E9170}' />
     </window>
     <window class='worksheet' name='Install Cap Map'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='133'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3227,12 +3315,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='23'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='133'>
             <card type='currpage' />
             <card pane-specification-id='4' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[usr:Calculation_1241023231293779971:qk:3]' type='color' />
           </strip>
@@ -3241,7 +3329,7 @@
       <viewpoint>
         <current-page>
           <multibucket>
-            <bucket>2013</bucket>
+            <bucket>2019</bucket>
           </multibucket>
         </current-page>
         <default-map-tool-selection tool='1' />
@@ -3257,7 +3345,7 @@
       <active id='-1' />
       <simple-id uuid='{5F884AA4-12A4-4657-92F6-51E487559771}' />
     </window>
-    <window class='dashboard' name='Presentation'>
+    <window class='dashboard' maximized='true' name='Presentation'>
       <viewpoints />
       <active id='-1' />
       <simple-id uuid='{65E40D84-F390-4FBE-BA44-3CA5DB6A27D3}' />
@@ -3277,10 +3365,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
           <strip size='30'>
@@ -3294,6 +3382,11 @@
         </edge>
       </cards>
       <simple-id uuid='{1EA2E3F8-D71A-448F-8346-D6800914CA09}' />
+    </window>
+    <window class='dashboard' name='Dashboard 10'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{E50E65DD-6CFA-4E62-ADDC-B482B70174C2}' />
     </window>
   </windows>
 </workbook>
