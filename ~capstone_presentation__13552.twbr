@@ -72,6 +72,9 @@
           <named-connection caption='wind_net_generation' name='textscan.1eeda781jkeqwm12fy1is0xmdt9u'>
             <connection class='textscan' directory='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/data' filename='wind_net_generation.csv' password='' port='0' server='' />
           </named-connection>
+          <named-connection caption='rotor_d_combo' name='textscan.19k5twg1cq8ppr169b28f0bul4qw'>
+            <connection class='textscan' directory='C:/Users/heath/Documents/NSS/projects/NSS-Capstone/notebook' filename='rotor_d_combo.csv' password='' port='0' server='' />
+          </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qub8nm15z46bo1a6h3ga1n5rxzy' name='Sheet1' table='[Sheet1$]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
@@ -84,9 +87,14 @@
             </columns>
           </relation>
           <relation connection='textscan.1j51aa40mvf26d18gn0b10dthazb' name='lcoe_US.csv' table='[lcoe_US#csv]' type='table' />
-          <relation connection='textscan.1sprgqj1bm64pu1e0ju781v3mdsn' name='rated_cap_combo.csv' table='[rated_cap_combo#csv]' type='table' />
-          <relation connection='textscan.1q268vn0mevfzq19uxgzx1us11m6' name='stacked_state_cap.csv' table='[stacked_state_cap#csv]' type='table' />
+          <relation connection='textscan.1sprgqj1bm64pu1e0ju781v3mdsn' name='rated_cap_combo.csv' table='[rated_cap_combo#csv]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy' name='year' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.19k5twg1cq8ppr169b28f0bul4qw' name='rotor_d_combo.csv' table='[rotor_d_combo#csv]' type='table' />
           <relation connection='textscan.1sprgqj1bm64pu1e0ju781v3mdsn' name='tower_height_combo.csv' table='[tower_height_combo#csv]' type='table' />
+          <relation connection='textscan.1q268vn0mevfzq19uxgzx1us11m6' name='stacked_state_cap.csv' table='[stacked_state_cap#csv]' type='table' />
           <relation connection='textscan.1n5c11v12b2uzk1ezqjv51epv2vk' name='us_installed_cap2.csv' table='[us_installed_cap2#csv]' type='table' />
           <relation connection='ogrdirect.035rtv70ug718z13eudnu01p6ab5' name='uswtdb_v3_2_20201014.geojson' table='[uswtdb_v3_2_20201014.geojson]' type='table'>
             <columns>
@@ -114,16 +122,20 @@
           <relation connection='textscan.1eeda781jkeqwm12fy1is0xmdt9u' name='wind_net_generation.csv' table='[wind_net_generation#csv]' type='table' />
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <cols>
+          <map key='[25% (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[25%]' />
           <map key='[25% (tower_height_combo.csv)]' value='[tower_height_combo.csv].[25%]' />
           <map key='[25%]' value='[rated_cap_combo.csv].[25%]' />
+          <map key='[50% (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[50%]' />
           <map key='[50% (tower_height_combo.csv)]' value='[tower_height_combo.csv].[50%]' />
           <map key='[50%]' value='[rated_cap_combo.csv].[50%]' />
+          <map key='[75% (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[75%]' />
           <map key='[75% (tower_height_combo.csv)]' value='[tower_height_combo.csv].[75%]' />
           <map key='[75%]' value='[rated_cap_combo.csv].[75%]' />
           <map key='[Code]' value='[lcoe_US.csv].[Code]' />
           <map key='[Entity]' value='[lcoe_US.csv].[Entity]' />
           <map key='[F1 (lcoe_US.csv)]' value='[lcoe_US.csv].[F1]' />
           <map key='[F1 (rated_cap_combo.csv)]' value='[rated_cap_combo.csv].[F1]' />
+          <map key='[F1 (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[F1]' />
           <map key='[F1 (stacked_state_cap.csv)]' value='[stacked_state_cap.csv].[F1]' />
           <map key='[F1 (tower_height_combo.csv)]' value='[tower_height_combo.csv].[F1]' />
           <map key='[F1 (us_installed_cap2.csv)]' value='[us_installed_cap2.csv].[F1]' />
@@ -143,14 +155,20 @@
           <map key='[Year (us_installed_cap2.csv)]' value='[us_installed_cap2.csv].[Year]' />
           <map key='[Year]' value='[wind_net_generation.csv].[Year]' />
           <map key='[case_id]' value='[uswtdb_v3_2_20201014.geojson].[case_id]' />
+          <map key='[count (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[count]' />
           <map key='[count (tower_height_combo.csv)]' value='[tower_height_combo.csv].[count]' />
           <map key='[count]' value='[rated_cap_combo.csv].[count]' />
-          <map key='[index]' value='[tower_height_combo.csv].[index]' />
+          <map key='[h_max]' value='[rated_cap_combo.csv].[h_max]' />
+          <map key='[h_mean]' value='[rated_cap_combo.csv].[h_mean]' />
+          <map key='[h_min]' value='[rated_cap_combo.csv].[h_min]' />
           <map key='[manu]' value='[new_manu_please_work.csv].[manu]' />
+          <map key='[max (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[max]' />
           <map key='[max (tower_height_combo.csv)]' value='[tower_height_combo.csv].[max]' />
           <map key='[max]' value='[rated_cap_combo.csv].[max]' />
+          <map key='[mean (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[mean]' />
           <map key='[mean (tower_height_combo.csv)]' value='[tower_height_combo.csv].[mean]' />
           <map key='[mean]' value='[rated_cap_combo.csv].[mean]' />
+          <map key='[min (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[min]' />
           <map key='[min (tower_height_combo.csv)]' value='[tower_height_combo.csv].[min]' />
           <map key='[min]' value='[rated_cap_combo.csv].[min]' />
           <map key='[p_cap]' value='[uswtdb_v3_2_20201014.geojson].[p_cap]' />
@@ -158,6 +176,10 @@
           <map key='[p_tnum]' value='[uswtdb_v3_2_20201014.geojson].[p_tnum]' />
           <map key='[p_year (uswtdb_v3_2_20201014.geojson)]' value='[uswtdb_v3_2_20201014.geojson].[p_year]' />
           <map key='[p_year]' value='[new_manu_please_work.csv].[p_year]' />
+          <map key='[r_max]' value='[rated_cap_combo.csv].[r_max]' />
+          <map key='[r_mean]' value='[rated_cap_combo.csv].[r_mean]' />
+          <map key='[r_min]' value='[rated_cap_combo.csv].[r_min]' />
+          <map key='[std (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[std]' />
           <map key='[std (tower_height_combo.csv)]' value='[tower_height_combo.csv].[std]' />
           <map key='[std]' value='[rated_cap_combo.csv].[std]' />
           <map key='[t_cap]' value='[uswtdb_v3_2_20201014.geojson].[t_cap]' />
@@ -172,6 +194,10 @@
           <map key='[t_ttlh]' value='[uswtdb_v3_2_20201014.geojson].[t_ttlh]' />
           <map key='[total_turbines]' value='[new_manu_please_work.csv].[total_turbines]' />
           <map key='[xlong]' value='[uswtdb_v3_2_20201014.geojson].[xlong]' />
+          <map key='[year (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[year]' />
+          <map key='[year (tower_height_combo.csv)]' value='[tower_height_combo.csv].[year]' />
+          <map key='[year]' value='[rated_cap_combo.csv].[year]' />
+          <map key='[year_group (rotor_d_combo.csv)]' value='[rotor_d_combo.csv].[year_group]' />
           <map key='[year_group (tower_height_combo.csv)]' value='[tower_height_combo.csv].[year_group]' />
           <map key='[year_group]' value='[rated_cap_combo.csv].[year_group]' />
           <map key='[ylat]' value='[uswtdb_v3_2_20201014.geojson].[ylat]' />
@@ -228,7 +254,7 @@
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[stacked_state_cap.csv]</parent-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -245,6 +271,22 @@
             <remote-name />
             <remote-type>0</remote-type>
             <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[stacked_state_cap.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -445,12 +487,25 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>year_group</remote-name>
             <remote-type>129</remote-type>
             <local-name>[year_group]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>year_group</remote-alias>
-            <ordinal>11</ordinal>
+            <ordinal>12</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -461,12 +516,12 @@
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>count</remote-name>
-            <remote-type>5</remote-type>
+            <remote-type>20</remote-type>
             <local-name>[count]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>count</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>real</local-type>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
@@ -477,7 +532,7 @@
             <local-name>[mean]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>mean</remote-alias>
-            <ordinal>13</ordinal>
+            <ordinal>14</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -489,7 +544,7 @@
             <local-name>[std]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>std</remote-alias>
-            <ordinal>14</ordinal>
+            <ordinal>15</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -501,7 +556,7 @@
             <local-name>[min]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>min</remote-alias>
-            <ordinal>15</ordinal>
+            <ordinal>16</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -513,7 +568,7 @@
             <local-name>[25%]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>25%</remote-alias>
-            <ordinal>16</ordinal>
+            <ordinal>17</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -525,7 +580,7 @@
             <local-name>[50%]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>50%</remote-alias>
-            <ordinal>17</ordinal>
+            <ordinal>18</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -537,7 +592,7 @@
             <local-name>[75%]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>75%</remote-alias>
-            <ordinal>18</ordinal>
+            <ordinal>19</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -549,7 +604,79 @@
             <local-name>[max]</local-name>
             <parent-name>[rated_cap_combo.csv]</parent-name>
             <remote-alias>max</remote-alias>
-            <ordinal>19</ordinal>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h_mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[h_mean]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>h_mean</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[h_min]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>h_min</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[h_max]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>h_max</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>r_mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[r_mean]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>r_mean</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>r_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[r_min]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>r_min</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>r_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[r_max]</local-name>
+            <parent-name>[rated_cap_combo.csv]</parent-name>
+            <remote-alias>r_max</remote-alias>
+            <ordinal>26</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -558,10 +685,280 @@
           <metadata-record class='column'>
             <remote-name>F1</remote-name>
             <remote-type>20</remote-type>
+            <local-name>[F1 (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year_group (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>year_group</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>mean</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>std</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[std (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>std</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[min (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>min</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>25%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[25% (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>25%</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>50%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[50% (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>50%</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>75%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[75% (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>75%</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max (rotor_d_combo.csv)]</local-name>
+            <parent-name>[rotor_d_combo.csv]</parent-name>
+            <remote-alias>max</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year_group (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>year_group</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>mean</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>std</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[std (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>std</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[min (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>min</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>25%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[25% (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>25%</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>50%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[50% (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>50%</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>75%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[75% (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>75%</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max (tower_height_combo.csv)]</local-name>
+            <parent-name>[tower_height_combo.csv]</parent-name>
+            <remote-alias>max</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
             <local-name>[F1 (stacked_state_cap.csv)]</local-name>
             <parent-name>[stacked_state_cap.csv]</parent-name>
             <remote-alias>F1</remote-alias>
-            <ordinal>20</ordinal>
+            <ordinal>49</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -573,7 +970,7 @@
             <local-name>[State]</local-name>
             <parent-name>[stacked_state_cap.csv]</parent-name>
             <remote-alias>State</remote-alias>
-            <ordinal>21</ordinal>
+            <ordinal>50</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -588,7 +985,7 @@
             <local-name>[Year (stacked_state_cap.csv)]</local-name>
             <parent-name>[stacked_state_cap.csv]</parent-name>
             <remote-alias>Year</remote-alias>
-            <ordinal>22</ordinal>
+            <ordinal>51</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -600,7 +997,7 @@
             <local-name>[Installed_Cap]</local-name>
             <parent-name>[stacked_state_cap.csv]</parent-name>
             <remote-alias>Installed_Cap</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>52</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -609,145 +1006,10 @@
           <metadata-record class='column'>
             <remote-name>F1</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[F1 (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>F1</remote-alias>
-            <ordinal>24</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>index</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[index]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>index</remote-alias>
-            <ordinal>25</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>year_group</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[year_group (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>year_group</remote-alias>
-            <ordinal>26</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>count</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[count (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>count</remote-alias>
-            <ordinal>27</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>mean</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[mean (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>mean</remote-alias>
-            <ordinal>28</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>std</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[std (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>std</remote-alias>
-            <ordinal>29</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>min</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[min (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>min</remote-alias>
-            <ordinal>30</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>25%</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[25% (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>25%</remote-alias>
-            <ordinal>31</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>50%</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[50% (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>50%</remote-alias>
-            <ordinal>32</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>75%</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[75% (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>75%</remote-alias>
-            <ordinal>33</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>max</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[max (tower_height_combo.csv)]</local-name>
-            <parent-name>[tower_height_combo.csv]</parent-name>
-            <remote-alias>max</remote-alias>
-            <ordinal>34</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F1</remote-name>
-            <remote-type>20</remote-type>
             <local-name>[F1 (us_installed_cap2.csv)]</local-name>
             <parent-name>[us_installed_cap2.csv]</parent-name>
             <remote-alias>F1</remote-alias>
-            <ordinal>35</ordinal>
+            <ordinal>53</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -759,7 +1021,7 @@
             <local-name>[Year (us_installed_cap2.csv)]</local-name>
             <parent-name>[us_installed_cap2.csv]</parent-name>
             <remote-alias>Year</remote-alias>
-            <ordinal>36</ordinal>
+            <ordinal>54</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -771,7 +1033,7 @@
             <local-name>[Grand_Total]</local-name>
             <parent-name>[us_installed_cap2.csv]</parent-name>
             <remote-alias>Grand_Total</remote-alias>
-            <ordinal>37</ordinal>
+            <ordinal>55</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -783,7 +1045,7 @@
             <local-name>[case_id]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>case_id</remote-alias>
-            <ordinal>38</ordinal>
+            <ordinal>56</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -795,7 +1057,7 @@
             <local-name>[t_state]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_state</remote-alias>
-            <ordinal>39</ordinal>
+            <ordinal>57</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -808,7 +1070,7 @@
             <local-name>[p_name]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>p_name</remote-alias>
-            <ordinal>40</ordinal>
+            <ordinal>58</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -821,7 +1083,7 @@
             <local-name>[p_year (uswtdb_v3_2_20201014.geojson)]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>p_year</remote-alias>
-            <ordinal>41</ordinal>
+            <ordinal>59</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -833,7 +1095,7 @@
             <local-name>[p_tnum]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>p_tnum</remote-alias>
-            <ordinal>42</ordinal>
+            <ordinal>60</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -845,7 +1107,7 @@
             <local-name>[p_cap]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>p_cap</remote-alias>
-            <ordinal>43</ordinal>
+            <ordinal>61</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -857,7 +1119,7 @@
             <local-name>[t_manu]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_manu</remote-alias>
-            <ordinal>44</ordinal>
+            <ordinal>62</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -870,7 +1132,7 @@
             <local-name>[t_model]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_model</remote-alias>
-            <ordinal>45</ordinal>
+            <ordinal>63</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -883,7 +1145,7 @@
             <local-name>[t_cap]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_cap</remote-alias>
-            <ordinal>46</ordinal>
+            <ordinal>64</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -895,7 +1157,7 @@
             <local-name>[t_hh]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_hh</remote-alias>
-            <ordinal>47</ordinal>
+            <ordinal>65</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -907,7 +1169,7 @@
             <local-name>[t_rd]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_rd</remote-alias>
-            <ordinal>48</ordinal>
+            <ordinal>66</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -919,7 +1181,7 @@
             <local-name>[t_rsa]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_rsa</remote-alias>
-            <ordinal>49</ordinal>
+            <ordinal>67</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -931,7 +1193,7 @@
             <local-name>[t_ttlh]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_ttlh</remote-alias>
-            <ordinal>50</ordinal>
+            <ordinal>68</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -943,7 +1205,7 @@
             <local-name>[t_conf_atr]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_conf_atr</remote-alias>
-            <ordinal>51</ordinal>
+            <ordinal>69</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -955,7 +1217,7 @@
             <local-name>[t_conf_loc]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>t_conf_loc</remote-alias>
-            <ordinal>52</ordinal>
+            <ordinal>70</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -967,7 +1229,7 @@
             <local-name>[xlong]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>xlong</remote-alias>
-            <ordinal>53</ordinal>
+            <ordinal>71</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -979,7 +1241,7 @@
             <local-name>[ylat]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>ylat</remote-alias>
-            <ordinal>54</ordinal>
+            <ordinal>72</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -991,7 +1253,7 @@
             <local-name>[Geometry]</local-name>
             <parent-name>[uswtdb_v3_2_20201014.geojson]</parent-name>
             <remote-alias>Geometry</remote-alias>
-            <ordinal>55</ordinal>
+            <ordinal>73</ordinal>
             <local-type>spatial</local-type>
             <aggregation>Collect</aggregation>
             <contains-null>true</contains-null>
@@ -1003,7 +1265,7 @@
             <local-name>[Job]</local-name>
             <parent-name>[Sheet1]</parent-name>
             <remote-alias>Job</remote-alias>
-            <ordinal>56</ordinal>
+            <ordinal>74</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -1019,7 +1281,7 @@
             <local-name>[Percent]</local-name>
             <parent-name>[Sheet1]</parent-name>
             <remote-alias>Percent</remote-alias>
-            <ordinal>57</ordinal>
+            <ordinal>75</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1035,7 +1297,7 @@
             <local-name>[Year]</local-name>
             <parent-name>[wind_net_generation.csv]</parent-name>
             <remote-alias>Year</remote-alias>
-            <ordinal>58</ordinal>
+            <ordinal>76</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -1047,7 +1309,7 @@
             <local-name>[Net generation (billion kilowatt hours)]</local-name>
             <parent-name>[wind_net_generation.csv]</parent-name>
             <remote-alias>Net generation (billion kilowatt hours)</remote-alias>
-            <ordinal>59</ordinal>
+            <ordinal>77</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -1059,7 +1321,7 @@
             <local-name>[F3]</local-name>
             <parent-name>[wind_net_generation.csv]</parent-name>
             <remote-alias>F3</remote-alias>
-            <ordinal>60</ordinal>
+            <ordinal>78</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -1068,14 +1330,21 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='25% (Rotor D Combo.Csv)' datatype='real' name='[25% (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='25% (Tower Height Combo.Csv)' datatype='real' name='[25% (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column datatype='real' name='[25%]' role='measure' type='quantitative' />
+      <column caption='50% (Rotor D Combo.Csv)' datatype='real' name='[50% (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='50% (Tower Height Combo.Csv)' datatype='real' name='[50% (tower_height_combo.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[50%]' role='measure' type='quantitative' />
+      <column caption='75% (Rotor D Combo.Csv)' datatype='real' name='[75% (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='75% (Tower Height Combo.Csv)' datatype='real' name='[75% (tower_height_combo.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[75%]' role='measure' type='quantitative' />
       <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
         <aliases>
+          <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]&quot;' value='Average Rotor Diameter' />
           <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]&quot;' value='Average Hub Height' />
           <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]&quot;' value='Average Rated Capacity' />
+          <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk]&quot;' value='Rotor Diameter Range' />
           <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]&quot;' value='Hub Height Range' />
           <alias key='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min:qk]&quot;' value='Rate Capacity Range' />
         </aliases>
@@ -1102,6 +1371,9 @@
       <column caption='State Running Total' datatype='real' name='[Calculation_1241023231295672325]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='SUM([Installed_Cap])' />
       </column>
+      <column caption='Rotor Range' datatype='real' name='[Calculation_953637281848020992]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[max (rotor_d_combo.csv)] - [min (rotor_d_combo.csv)]' />
+      </column>
       <column caption='Rank of Running Total' datatype='integer' name='[Calculation_960955628846309376]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='RANK_UNIQUE([Calculation_960955628854714374], &apos;desc&apos;)'>
           <table-calc ordering-type='Rows' />
@@ -1117,6 +1389,7 @@
       </column>
       <column caption='F1 (lcoe US.csv)' datatype='integer' name='[F1 (lcoe_US.csv)]' role='measure' type='quantitative' />
       <column caption='F1 (rated cap combo.csv)' datatype='integer' name='[F1 (rated_cap_combo.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (rotor d combo.csv)' datatype='integer' name='[F1 (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='F1 (stacked state cap.csv)' datatype='integer' name='[F1 (stacked_state_cap.csv)]' role='measure' type='quantitative' />
       <column caption='F1 (tower height combo.csv)' datatype='integer' name='[F1 (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column caption='F1 (us installed cap2.csv)' datatype='integer' name='[F1 (us_installed_cap2.csv)]' role='measure' type='quantitative' />
@@ -1137,19 +1410,25 @@
       <_.fcp.ObjectModelTableType.true...column caption='lcoe_US.csv' datatype='table' name='[__tableau_internal_object_id__].[lcoe_US.csv_15434A29467540719E1D22078A9B9772]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='new_manu_please_work.csv' datatype='table' name='[__tableau_internal_object_id__].[new_manu_please_work.csv_36165E14613D400481CD494D14366051]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='rated_cap_combo.csv' datatype='table' name='[__tableau_internal_object_id__].[rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='rotor_d_combo.csv' datatype='table' name='[__tableau_internal_object_id__].[rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='stacked_state_cap.csv' datatype='table' name='[__tableau_internal_object_id__].[stacked_state_cap.csv_14A8402347854A83A3CEBF4D8DBB4905]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='tower_height_combo.csv' datatype='table' name='[__tableau_internal_object_id__].[tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='us_installed_cap2.csv' datatype='table' name='[__tableau_internal_object_id__].[us_installed_cap2.csv_EF897BD6847E4328853A817B5554572A]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='uswtdb_v3_2_20201014.geojson' datatype='table' name='[__tableau_internal_object_id__].[uswtdb_v3_2_20201014.geojson_23326C3FFE774FBCACF46BB7714E8DD0]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='wind_net_generation.csv' datatype='table' name='[__tableau_internal_object_id__].[wind_net_generation.csv_CE0B70E93B7843C39B9E8EA442FD3203]' role='measure' type='quantitative' />
       <column caption='Case Id' datatype='real' name='[case_id]' role='dimension' type='ordinal' />
-      <column caption='Count (Tower Height Combo.Csv)' datatype='real' name='[count (tower_height_combo.csv)]' role='measure' type='quantitative' />
-      <column caption='Count' datatype='real' name='[count]' role='measure' type='quantitative' />
+      <column caption='Count (Rotor D Combo.Csv)' datatype='integer' name='[count (rotor_d_combo.csv)]' role='measure' type='quantitative' />
+      <column caption='Count (Tower Height Combo.Csv)' datatype='integer' name='[count (tower_height_combo.csv)]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column datatype='real' name='[h_mean]' role='measure' type='quantitative' />
       <column caption='Manu' datatype='string' name='[manu]' role='dimension' type='nominal' />
+      <column caption='Max (Rotor D Combo.Csv)' datatype='real' name='[max (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Max (Tower Height Combo.Csv)' datatype='real' name='[max (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Max' datatype='real' name='[max]' role='measure' type='quantitative' />
+      <column caption='Mean (Rotor D Combo.Csv)' datatype='real' name='[mean (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Mean (Tower Height Combo.Csv)' datatype='real' name='[mean (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Mean' datatype='real' name='[mean]' role='measure' type='quantitative' />
+      <column caption='Min (Rotor D Combo.Csv)' datatype='real' name='[min (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Min (Tower Height Combo.Csv)' datatype='real' name='[min (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Min' datatype='real' name='[min]' role='measure' type='quantitative' />
       <column caption='P Cap' datatype='real' name='[p_cap]' role='measure' type='quantitative' />
@@ -1157,6 +1436,8 @@
       <column caption='P Tnum' datatype='real' name='[p_tnum]' role='measure' type='quantitative' />
       <column caption='P Year (Uswtdb V3 2 20201014.Geojson)' datatype='real' name='[p_year (uswtdb_v3_2_20201014.geojson)]' role='dimension' type='quantitative' />
       <column caption='P Year' datatype='integer' name='[p_year]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[r_mean]' role='measure' type='quantitative' />
+      <column caption='Std (Rotor D Combo.Csv)' datatype='real' name='[std (rotor_d_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Std (Tower Height Combo.Csv)' datatype='real' name='[std (tower_height_combo.csv)]' role='measure' type='quantitative' />
       <column caption='Std' datatype='real' name='[std]' role='measure' type='quantitative' />
       <column caption='T Cap' datatype='real' name='[t_cap]' role='measure' type='quantitative' />
@@ -1171,13 +1452,22 @@
       <column caption='T Ttlh' datatype='real' name='[t_ttlh]' role='measure' type='quantitative' />
       <column caption='Total Turbines' datatype='integer' name='[total_turbines]' role='measure' type='quantitative' />
       <column caption='Xlong' datatype='real' name='[xlong]' role='measure' type='quantitative' />
+      <column caption='Year Group (Rotor D Combo.Csv)' datatype='string' name='[year_group (rotor_d_combo.csv)]' role='dimension' type='nominal' />
       <column caption='Year Group (Tower Height Combo.Csv)' datatype='string' name='[year_group (tower_height_combo.csv)]' role='dimension' type='nominal' />
       <column caption='Year Group' datatype='string' name='[year_group]' role='dimension' type='nominal' />
       <column caption='Ylat' datatype='real' name='[ylat]' role='measure' type='quantitative' />
       <column-instance column='[__tableau_internal_object_id__].[new_manu_please_work.csv_36165E14613D400481CD494D14366051]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:new_manu_please_work.csv_36165E14613D400481CD494D14366051:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_1241023231246524416]' derivation='Attribute' name='[attr:Calculation_1241023231246524416:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean (rotor_d_combo.csv)]' derivation='Attribute' name='[attr:mean (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean (tower_height_combo.csv)]' derivation='Attribute' name='[attr:mean (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean]' derivation='Attribute' name='[attr:mean:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Job Set]' derivation='InOut' name='[io:Job Set:nk]' pivot='key' type='nominal' />
+      <column-instance column='[mean (rotor_d_combo.csv)]' derivation='Max' name='[max:mean (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean (rotor_d_combo.csv)]' derivation='None' name='[none:mean (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean]' derivation='None' name='[none:mean:qk]' pivot='key' type='quantitative' />
       <column-instance column='[25%]' derivation='Sum' name='[sum:25%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[50%]' derivation='Sum' name='[sum:50%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[75%]' derivation='Sum' name='[sum:75%:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_1241023231246524416]' derivation='Sum' name='[sum:Calculation_1241023231246524416:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_1241023231257337858]' derivation='Sum' name='[sum:Calculation_1241023231257337858:qk]' pivot='key' type='quantitative' />
       <column-instance column='[F1 (us_installed_cap2.csv)]' derivation='Sum' name='[sum:F1 (us_installed_cap2.csv):qk]' pivot='key' type='quantitative' />
@@ -1187,11 +1477,17 @@
       <column-instance column='[Net generation (billion kilowatt hours)]' derivation='Sum' name='[sum:Net generation (billion kilowatt hours):qk]' pivot='key' type='quantitative' />
       <column-instance column='[Onshore wind LCOE (2019 USD/kWh)]' derivation='Sum' name='[sum:Onshore wind LCOE (2019 USD/kWh):qk]' pivot='key' type='quantitative' />
       <column-instance column='[Solar LCOE (2019 USD/kWh)]' derivation='Sum' name='[sum:Solar LCOE (2019 USD/kWh):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[h_mean]' derivation='Sum' name='[sum:h_mean:qk]' pivot='key' type='quantitative' />
       <column-instance column='[max]' derivation='Sum' name='[sum:max:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mean (rotor_d_combo.csv)]' derivation='Sum' name='[sum:mean (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
       <column-instance column='[mean (tower_height_combo.csv)]' derivation='Sum' name='[sum:mean (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
       <column-instance column='[mean]' derivation='Sum' name='[sum:mean:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[min (rotor_d_combo.csv)]' derivation='Sum' name='[sum:min (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
       <column-instance column='[min (tower_height_combo.csv)]' derivation='Sum' name='[sum:min (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
       <column-instance column='[min]' derivation='Sum' name='[sum:min:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[r_mean]' derivation='Sum' name='[sum:r_mean:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[std]' derivation='Sum' name='[sum:std:qk]' pivot='key' type='quantitative' />
       <column-instance column='[total_turbines]' derivation='Sum' name='[sum:total_turbines:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_960955628846309376]' derivation='User' name='[usr:Calculation_960955628846309376:qk]' pivot='key' type='quantitative'>
         <table-calc ordering-type='Rows' />
@@ -1355,7 +1651,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-hidden-fields='true' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[io:Job Set:nk]' type='palette'>
@@ -1369,6 +1665,15 @@
           <encoding attr='color' field='[:Measure Names]' type='palette'>
             <map to='#499894'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[__tableau_internal_object_id__].[cnt:wind_net_generation.csv_A978F31911C84DE1835A1A1E5B20282B:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[attr:mean (tower_height_combo.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[max:mean (rotor_d_combo.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:mean (rotor_d_combo.csv):qk]&quot;</bucket>
             </map>
             <map to='#4e79a7'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_1241023231257337858:qk]&quot;</bucket>
@@ -1415,6 +1720,9 @@
             <map to='#8cd17d'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:count:qk]&quot;</bucket>
             </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]&quot;</bucket>
+            </map>
             <map to='#a0cbe8'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:25\%:qk]&quot;</bucket>
             </map>
@@ -1423,6 +1731,9 @@
             </map>
             <map to='#b6992d'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[__tableau_internal_object_id__].[cnt:new_manu_please_work.csv_36165E14613D400481CD494D14366051:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk]&quot;</bucket>
             </map>
             <map to='#bab0ac'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]&quot;</bucket>
@@ -1439,8 +1750,14 @@
             <map to='#e15759'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:F1 (us_installed_cap2.csv):qk]&quot;</bucket>
             </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:h_mean:qk]&quot;</bucket>
+            </map>
             <map to='#f1ce63'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[__tableau_internal_object_id__].[cnt:wind_2014_rate_cap.csv_85F587D901214616A3D025018D36D128:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[attr:mean (rotor_d_combo.csv):qk]&quot;</bucket>
             </map>
             <map to='#f28e2b'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[attr:mean:qk]&quot;</bucket>
@@ -1453,6 +1770,9 @@
             </map>
             <map to='#f28e2b'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rated_cap_combo.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:r_mean:qk]&quot;</bucket>
             </map>
             <map to='#f28e2b'>
               <bucket>&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Solar LCOE (2019 USD/kWh):qk]&quot;</bucket>
@@ -1498,7 +1818,16 @@
           </object>
           <object caption='rated_cap_combo.csv' id='rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C'>
             <properties context=''>
-              <relation connection='textscan.1sprgqj1bm64pu1e0ju781v3mdsn' name='rated_cap_combo.csv' table='[rated_cap_combo#csv]' type='table' />
+              <relation connection='textscan.1sprgqj1bm64pu1e0ju781v3mdsn' name='rated_cap_combo.csv' table='[rated_cap_combo#csv]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='year' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='rotor_d_combo.csv' id='rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D'>
+            <properties context=''>
+              <relation connection='textscan.19k5twg1cq8ppr169b28f0bul4qw' name='rotor_d_combo.csv' table='[rotor_d_combo#csv]' type='table' />
             </properties>
           </object>
           <object caption='stacked_state_cap.csv' id='stacked_state_cap.csv_14A8402347854A83A3CEBF4D8DBB4905'>
@@ -1585,6 +1914,14 @@
           </relationship>
           <relationship>
             <expression op='='>
+              <expression op='[year_group]' />
+              <expression op='[year_group (rotor_d_combo.csv)]' />
+            </expression>
+            <first-end-point object-id='rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C' />
+            <second-end-point object-id='rotor_d_combo.csv_A50CBC4F78CE4E9F9CF96A4B5F9C5D5D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
               <expression op='[F1]' />
               <expression op='[F1 (stacked_state_cap.csv)]' />
             </expression>
@@ -1593,10 +1930,10 @@
           </relationship>
           <relationship>
             <expression op='='>
-              <expression op='[F1]' />
-              <expression op='[F1 (tower_height_combo.csv)]' />
+              <expression op='[year_group]' />
+              <expression op='[year_group (tower_height_combo.csv)]' />
             </expression>
-            <first-end-point object-id='new_manu_please_work.csv_36165E14613D400481CD494D14366051' />
+            <first-end-point object-id='rated_cap_combo.csv_D81B91AC2A174ABC8E0290417B569F5C' />
             <second-end-point object-id='tower_height_combo.csv_A0CA4AE1C5424B8CBB0DA30EB9A0167B' />
           </relationship>
           <relationship>
@@ -1646,6 +1983,16 @@
   <mapsources>
     <mapsource name='Tableau' />
   </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Rotor Dash' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Rotor Dash' />
+      </command>
+    </action>
+  </actions>
   <worksheets>
     <worksheet name='Hub Height'>
       <layout-options>
@@ -1680,7 +2027,7 @@
           <style-rule element='axis'>
             <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' field-type='quantitative' fold='true' major-origin='0.0' major-show='false' major-spacing='100.0' minor-origin='0.0' minor-show='false' minor-spacing='10.0' scope='rows' synchronized='true' type='space' />
             <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' scope='rows' value='' />
-            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' scope='rows' value='Height (meters)' />
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' scope='rows' value='Height (Feet)' />
             <format attr='display' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' scope='rows' value='false' />
           </style-rule>
           <style-rule element='worksheet'>
@@ -1740,7 +2087,7 @@
                 <run fontcolor='#787878'>Year Group:&#9;</run>
                 <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]>]]></run>
                 <run>Æ&#10;</run>
-                <run fontcolor='#787878'>Average Hub Height:&#9;</run>
+                <run fontcolor='#787878'>Average:&#9;</run>
                 <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]>]]></run>
               </formatted-text>
             </customized-tooltip>
@@ -1755,115 +2102,6 @@
         <cols>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]</cols>
       </table>
       <simple-id uuid='{465AC241-05F1-4E0B-8171-116AB01A799D}' />
-    </worksheet>
-    <worksheet name='Hub Height (2)'>
-      <layout-options>
-        <title>
-          <formatted-text>
-            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='20'>Average Hub Height 1980 - 2020</run>
-          </formatted-text>
-        </title>
-      </layout-options>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='us' name='federated.1l6ncpv10u4ps61961y2h1h8o5sv' />
-          </datasources>
-          <datasource-dependencies datasource='federated.1l6ncpv10u4ps61961y2h1h8o5sv'>
-            <column caption='height_size' datatype='real' name='[Calculation_1241023231257337858]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='[max (tower_height_combo.csv)] - [min (tower_height_combo.csv)]' />
-            </column>
-            <column caption='Max (Tower Height Combo.Csv)' datatype='real' name='[max (tower_height_combo.csv)]' role='measure' type='quantitative' />
-            <column caption='Mean (Tower Height Combo.Csv)' datatype='real' name='[mean (tower_height_combo.csv)]' role='measure' type='quantitative' />
-            <column caption='Min (Tower Height Combo.Csv)' datatype='real' name='[min (tower_height_combo.csv)]' role='measure' type='quantitative' />
-            <column-instance column='[year_group (tower_height_combo.csv)]' derivation='None' name='[none:year_group (tower_height_combo.csv):nk]' pivot='key' type='nominal' />
-            <column-instance column='[Calculation_1241023231257337858]' derivation='Sum' name='[sum:Calculation_1241023231257337858:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[max (tower_height_combo.csv)]' derivation='Sum' name='[sum:max (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
-            <column-instance column='[mean (tower_height_combo.csv)]' derivation='Sum' name='[sum:mean (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
-            <column-instance column='[min (tower_height_combo.csv)]' derivation='Sum' name='[sum:min (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
-            <column caption='Year Group (Tower Height Combo.Csv)' datatype='string' name='[year_group (tower_height_combo.csv)]' role='dimension' type='nominal' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='axis'>
-            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' scope='rows' value='' />
-            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' scope='rows' value='Height (meters)' />
-            <format attr='display' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' scope='rows' value='false' />
-          </style-rule>
-          <style-rule element='worksheet'>
-            <format attr='display-field-labels' scope='cols' value='false' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Circle' />
-            <encodings>
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]' />
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (tower_height_combo.csv):qk]' />
-            </encodings>
-            <reference-line axis-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_1241023231257337858:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_1241023231257337858:qk]' z-order='1' />
-            <reference-line axis-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]' z-order='2' />
-            <reference-line axis-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' z-order='3' />
-            <style>
-              <style-rule element='mark'>
-                <format attr='size' value='0.25' />
-              </style-rule>
-            </style>
-          </pane>
-          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_1241023231257337858:qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Circle' />
-            <encodings>
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]' />
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (tower_height_combo.csv):qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='size' value='0.25' />
-              </style-rule>
-            </style>
-          </pane>
-          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Circle' />
-            <encodings>
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]' />
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (tower_height_combo.csv):qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='size' value='0.25' />
-              </style-rule>
-            </style>
-          </pane>
-          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Circle' />
-            <encodings>
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (tower_height_combo.csv):nk]' />
-              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (tower_height_combo.csv):qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='size' value='0.25' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>([federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_1241023231257337858:qk] + ([federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (tower_height_combo.csv):qk] + [federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]))</rows>
-        <cols />
-      </table>
-      <simple-id uuid='{93AA0B76-5CD3-4D9E-B3EC-21353A12F008}' />
     </worksheet>
     <worksheet name='Install Cap Map'>
       <table>
@@ -1897,8 +2135,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Longitude (generated)]' field-type='quantitative' max='33009172.745691512' min='25490514.121657487' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Latitude (generated)]' field-type='quantitative' max='6884490.9526973367' min='2442274.3816368566' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Longitude (generated)]' field-type='quantitative' max='33275828.638053983' min='25219690.028725803' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Latitude (generated)]' field-type='quantitative' max='6887966.7382638566' min='2441307.743047351' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[usr:Calculation_1241023231293779971:qk:3]' palette='blue_teal_10_0' reverse='true' type='interpolated' />
@@ -2242,6 +2480,73 @@
       </table>
       <simple-id uuid='{466C8BF3-AE91-4BC8-8BCD-A1595E5FA49C}' />
     </worksheet>
+    <worksheet name='RC VS RD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='20'>Average Rated Capacity vs Rotor Diameter 1980 - 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us' name='federated.1l6ncpv10u4ps61961y2h1h8o5sv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l6ncpv10u4ps61961y2h1h8o5sv'>
+            <column caption='Mean' datatype='real' name='[mean]' role='measure' type='quantitative' />
+            <column-instance column='[year_group]' derivation='None' name='[none:year_group:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[r_mean]' role='measure' type='quantitative' />
+            <column-instance column='[mean]' derivation='Sum' name='[sum:mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[r_mean]' derivation='Sum' name='[sum:r_mean:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Group' datatype='string' name='[year_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' scope='rows' value='Rated Capacity (Megawatts)' />
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:r_mean:qk]' scope='cols' value='Rotor Diameter (Feet)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Average Rated Capacity:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Average Rotor Diameter:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:r_mean:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]</rows>
+        <cols>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:r_mean:qk]</cols>
+        <pages>
+          <column>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group:nk]</column>
+        </pages>
+        <page-trail-options enabled='true' lines='true' mark-type='all' />
+      </table>
+      <simple-id uuid='{CB111FB5-DFFA-4AF7-8050-4A0268DB57F4}' />
+    </worksheet>
     <worksheet name='Rated Cap'>
       <layout-options>
         <title>
@@ -2277,7 +2582,7 @@
             <format attr='auto-subtitle' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' scope='rows' value='true' />
             <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' scope='rows' value='' />
             <format attr='display' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' scope='rows' value='false' />
-            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min:qk]' scope='rows' value='Rated Capacity (megawatts)' />
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min:qk]' scope='rows' value='Rated Capacity (Megawatts)' />
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
@@ -2359,6 +2664,186 @@
         <cols>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group:nk]</cols>
       </table>
       <simple-id uuid='{01E24A16-5955-4923-A813-CE93B645D2DB}' />
+    </worksheet>
+    <worksheet name='Rated Cap (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='20'> Average Rated Capacity 1980 - 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us' name='federated.1l6ncpv10u4ps61961y2h1h8o5sv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l6ncpv10u4ps61961y2h1h8o5sv'>
+            <column datatype='real' name='[h_mean]' role='measure' type='quantitative' />
+            <column caption='Mean' datatype='real' name='[mean]' role='measure' type='quantitative' />
+            <column-instance column='[year_group]' derivation='None' name='[none:year_group:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[r_mean]' role='measure' type='quantitative' />
+            <column-instance column='[h_mean]' derivation='Sum' name='[sum:h_mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mean]' derivation='Sum' name='[sum:mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[r_mean]' derivation='Sum' name='[sum:r_mean:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Group' datatype='string' name='[year_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:h_mean:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:r_mean:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Multiple Values]' scope='rows' value='Hub Height and Rotor Diameter (Feet)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
+              <size column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[Multiple Values]</rows>
+        <cols>([federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group:nk] / [federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{CDD783CF-D7AA-410D-BED0-9A0B75191AB8}' />
+    </worksheet>
+    <worksheet name='Rotor Diameter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='20'>Average Rotor Diameter 1980 - 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='us' name='federated.1l6ncpv10u4ps61961y2h1h8o5sv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l6ncpv10u4ps61961y2h1h8o5sv'>
+            <column caption='Rotor Range' datatype='real' name='[Calculation_953637281848020992]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[max (rotor_d_combo.csv)] - [min (rotor_d_combo.csv)]' />
+            </column>
+            <column caption='Max (Rotor D Combo.Csv)' datatype='real' name='[max (rotor_d_combo.csv)]' role='measure' type='quantitative' />
+            <column caption='Mean (Rotor D Combo.Csv)' datatype='real' name='[mean (rotor_d_combo.csv)]' role='measure' type='quantitative' />
+            <column caption='Min (Rotor D Combo.Csv)' datatype='real' name='[min (rotor_d_combo.csv)]' role='measure' type='quantitative' />
+            <column caption='Min (Tower Height Combo.Csv)' datatype='real' name='[min (tower_height_combo.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[year_group (rotor_d_combo.csv)]' derivation='None' name='[none:year_group (rotor_d_combo.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_953637281848020992]' derivation='Sum' name='[sum:Calculation_953637281848020992:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[max (rotor_d_combo.csv)]' derivation='Sum' name='[sum:max (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mean (rotor_d_combo.csv)]' derivation='Sum' name='[sum:mean (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[min (rotor_d_combo.csv)]' derivation='Sum' name='[sum:min (rotor_d_combo.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[min (tower_height_combo.csv)]' derivation='Sum' name='[sum:min (tower_height_combo.csv):qk]' pivot='key' type='quantitative' />
+            <column caption='Year Group (Rotor D Combo.Csv)' datatype='string' name='[year_group (rotor_d_combo.csv)]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (rotor_d_combo.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:year_group (rotor_d_combo.csv):nk]' />
+              <groupfilter function='member' level='[none:year_group (rotor_d_combo.csv):nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (rotor_d_combo.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk]' scope='rows' value='Rotor Diameter (Feet)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:Calculation_953637281848020992:qk]' />
+              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
+              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (rotor_d_combo.csv):qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (rotor_d_combo.csv):nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Max:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:max (rotor_d_combo.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Min:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.042983423918485641' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (tower_height_combo.csv):qk]' />
+              <color column='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (rotor_d_combo.csv):nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Average:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:min (rotor_d_combo.csv):qk] + [federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean (rotor_d_combo.csv):qk])</rows>
+        <cols>[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[none:year_group (rotor_d_combo.csv):nk]</cols>
+      </table>
+      <simple-id uuid='{3EF09DC0-D143-48C6-AF70-EF6D765E5078}' />
     </worksheet>
     <worksheet name='Sheet 9'>
       <table>
@@ -2667,19 +3152,21 @@
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>100 watt light bulb = 0.1 kilowatts/hour = </run>
               <run fontalignment='1'>Æ&#10;</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1 kWh after 10 hours</run>
-              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average U.S. home: </run>
               <run fontalignment='1'>Æ&#10;</run>
-              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>867 kilowatt-hours (kWh) per month</run>
-              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>887 kilowatt-hours (kWh) per month</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average rated turbine capacity: </run>
               <run fontalignment='1'>Æ&#10;</run>
-              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1.67 megawatts = 1670 kilowatts </run>
-              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>2.3 megawatts = 2300 kilowatts </run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Capacity Factor = Actual amount produced over time / maximum output 100% of the time</run>
-              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+              <run fontalignment='1' fontcolor='#00000f' fontname='Verdana' fontsize='16'>2300 kilowatts × 1.169 hours × 33% = 887 kWh</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average wind turbine generates enough energy in </run>
-              <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>94 minutes</run>
+              <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>70 minutes</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'> to power an average U.S. home for </run>
               <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>one month</run>
               <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>. </run>
@@ -2712,19 +3199,21 @@
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>100 watt light bulb = 0.1 kilowatts/hour = </run>
                     <run fontalignment='1'>Æ&#10;</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1 kWh after 10 hours</run>
-                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average U.S. home: </run>
                     <run fontalignment='1'>Æ&#10;</run>
-                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>867 kilowatt-hours (kWh) per month</run>
-                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>887 kilowatt-hours (kWh) per month</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average rated turbine capacity: </run>
                     <run fontalignment='1'>Æ&#10;</run>
-                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>1.67 megawatts = 1670 kilowatts </run>
-                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>2.3 megawatts = 2300 kilowatts </run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Capacity Factor = Actual amount produced over time / maximum output 100% of the time</run>
-                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#00000f' fontname='Verdana' fontsize='16'>2300 kilowatts × 1.169 hours × 33% = 887 kWh</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>Average wind turbine generates enough energy in </run>
-                    <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>94 minutes</run>
+                    <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>70 minutes</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'> to power an average U.S. home for </run>
                     <run bold='true' fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>one month</run>
                     <run fontalignment='1' fontcolor='#333333' fontname='Verdana' fontsize='16'>. </run>
@@ -2811,7 +3300,7 @@
           <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
             <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='6535' id='4' paired-zone-id='5' removable='false' w='98426' x='787' y='830' />
             <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='91805' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='7365'>
-              <flipboard active-id='7' nav-type='dot' show-nav-arrows='true'>
+              <flipboard active-id='11' nav-type='dot' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='Title Page' id='1' />
                   <story-point captured-sheet='Sunrise' id='2' />
@@ -2819,8 +3308,21 @@
                   <story-point captured-sheet='Energy Timeline' id='3' />
                   <story-point captured-sheet='Megawatt' id='4' />
                   <story-point captured-sheet='Turbines' id='5' />
-                  <story-point captured-sheet='Rated Cap Dash' id='7' />
                   <story-point captured-sheet='Hub Height Dash' id='8' />
+                  <story-point captured-sheet='Rotor Dash' id='10' />
+                  <story-point captured-sheet='Rated Cap Dash' id='7' />
+                  <story-point captured-sheet='RC VS RD' id='11'>
+                    <currentDeltas>
+                      <worksheet name='RC VS RD'>
+                        <current-page>
+                          <multibucket>
+                            <bucket>&quot;2010-15&quot;</bucket>
+                          </multibucket>
+                        </current-page>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
                 </story-points>
               </flipboard>
             </zone>
@@ -2897,6 +3399,50 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{ED8E8FA6-4B06-496F-AE5B-400373333871}' />
+    </dashboard>
+    <dashboard name='Rotor Dash'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Rotor Diameter' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='76' h='9500' id='8' is-fixed='true' name='Rotor Diameter' pane-specification-id='5' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' show-title='false' w='25800' x='10900' y='13625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='1' param='vert' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D925CA3A-CB19-4821-AB88-5DBCE4B24C38}' />
     </dashboard>
     <dashboard name='Sunrise'>
       <style />
@@ -3054,7 +3600,7 @@
       <simple-id uuid='{F035EF41-DEBB-48F0-B28C-D3DD28C2EB6B}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+  <windows pres-mode='true' saved-dpi-scale-factor='1.5' source-height='44'>
     <window class='dashboard' name='Title Page'>
       <viewpoints />
       <active id='-1' />
@@ -3161,10 +3707,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3215,10 +3761,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3236,6 +3782,37 @@
       </viewpoint>
       <simple-id uuid='{1D43AF45-8400-4A1F-A492-AD1E5DDE3EA1}' />
     </window>
+    <window class='worksheet' name='Rotor Diameter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{19D594CE-8D7C-4120-B185-8F2D72E16A5C}' />
+    </window>
     <window class='worksheet' name='Rated Cap'>
       <cards>
         <edge name='left'>
@@ -3246,10 +3823,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='28'>
@@ -3267,10 +3844,40 @@
       </viewpoint>
       <simple-id uuid='{92E2F32E-434A-4DE4-8BB7-BC66FB9E0457}' />
     </window>
-    <window class='worksheet' name='Hub Height (2)'>
+    <window class='worksheet' name='Rated Cap (2)'>
       <cards>
         <edge name='left'>
-          <strip size='133'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.1l6ncpv10u4ps61961y2h1h8o5sv].[sum:mean:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86814386-2141-4D2A-B77C-0EE7AAF584C2}' />
+    </window>
+    <window class='worksheet' name='RC VS RD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3283,12 +3890,25 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='23'>
+          <strip size='28'>
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+          </strip>
+        </edge>
       </cards>
-      <simple-id uuid='{A5FF8F10-B66B-44F1-A4BF-FD3263712DE9}' />
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>&quot;2015-20&quot;</bucket>
+          </multibucket>
+        </current-page>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{97960614-956E-48FE-8458-139EB1CB6180}' />
     </window>
     <window class='dashboard' name='Hub Height Dash'>
       <viewpoints>
@@ -3298,6 +3918,24 @@
       </viewpoints>
       <active id='9' />
       <simple-id uuid='{AA6094A9-2506-41F9-A293-21FB841E9170}' />
+    </window>
+    <window class='dashboard' name='Rotor Dash'>
+      <viewpoints>
+        <viewpoint name='Rotor Diameter'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F3C65024-DC84-4CDE-AA73-FA066EC1F795}' />
+    </window>
+    <window class='dashboard' name='Rated Cap Dash'>
+      <viewpoints>
+        <viewpoint name='Rated Cap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5F884AA4-12A4-4657-92F6-51E487559771}' />
     </window>
     <window class='worksheet' name='Install Cap Map'>
       <cards>
@@ -3336,18 +3974,9 @@
       </viewpoint>
       <simple-id uuid='{E9C3FD47-65A9-4E35-A89A-988441C68A96}' />
     </window>
-    <window class='dashboard' name='Rated Cap Dash'>
-      <viewpoints>
-        <viewpoint name='Rated Cap'>
-          <zoom type='entire-view' />
-        </viewpoint>
-      </viewpoints>
-      <active id='-1' />
-      <simple-id uuid='{5F884AA4-12A4-4657-92F6-51E487559771}' />
-    </window>
     <window class='dashboard' maximized='true' name='Presentation'>
       <viewpoints />
-      <active id='-1' />
+      <active id='5' />
       <simple-id uuid='{65E40D84-F390-4FBE-BA44-3CA5DB6A27D3}' />
     </window>
     <window class='dashboard' name='Dashboard 9'>
@@ -3365,10 +3994,10 @@
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='32'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
           <strip size='30'>
