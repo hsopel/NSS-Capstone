@@ -22,4 +22,4 @@ My brother has worked as a wind turbine technician for almost three years, but b
 * Pew Research Center
 * WINDExchange
 * American Wind Energy Association
-Complete Works Cited ![here](works_cited.pdf)
+* Complete Works Cited [here](works_cited.pdf)
