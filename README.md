@@ -14,11 +14,11 @@ My brother has worked as a wind turbine technician for almost three years, but b
 3. How has the wind energy industry continued to innovate to mitigate risk to humans and wildlife?
 
 ### Key Findings
-![Hub Height](images/hubheight.png)
+![Hub Height](images/hubheight.PNG)
 
-![Rated Capacity vs Rotor Diameter](images/ratedcap_vs_rotordiameter.png)
+![Rated Capacity vs Rotor Diameter](images/ratedcap_vs_rotordiameter.PNG)
 
-![Levelized Cost of Energy](images/lcoe.png)
+![Levelized Cost of Energy](images/lcoe.PNG)
 
 ### Tools used
 * Excel
